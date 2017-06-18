@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMChatRoomsController" customModule="HelloMVVM" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView_chatRooms" destination="gbn-uc-wDh" id="9bK-1N-w82"/>
+                <outlet property="txtField_channelName" destination="XlX-za-a66" id="tBS-3n-8he"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thk-84-DMM">
+                    <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter channel name?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XlX-za-a66">
+                            <rect key="frame" x="10" y="10" width="285" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWZ-In-VEd">
+                            <rect key="frame" x="305" y="11" width="60" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="7nh-WE-ru5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="16"/>
+                            <state key="normal" title="Create">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapCreateChannel:" destination="-1" eventType="touchUpInside" id="v0Z-IS-eX3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.82352941180000006" green="0.050980392159999999" blue="0.3803921569" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="MWZ-In-VEd" firstAttribute="centerY" secondItem="thk-84-DMM" secondAttribute="centerY" id="FxD-c3-8M8"/>
+                        <constraint firstItem="XlX-za-a66" firstAttribute="leading" secondItem="thk-84-DMM" secondAttribute="leading" constant="10" id="IYK-MK-vy7"/>
+                        <constraint firstItem="XlX-za-a66" firstAttribute="centerY" secondItem="thk-84-DMM" secondAttribute="centerY" id="XL1-aG-gJH"/>
+                        <constraint firstAttribute="height" constant="50" id="aOR-d1-M7e"/>
+                        <constraint firstAttribute="trailing" secondItem="MWZ-In-VEd" secondAttribute="trailing" constant="10" id="eJr-Wf-f34"/>
+                        <constraint firstItem="MWZ-In-VEd" firstAttribute="leading" secondItem="XlX-za-a66" secondAttribute="trailing" constant="10" id="jCd-Pk-aF1"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gbn-uc-wDh">
+                    <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="thk-84-DMM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="7JZ-6j-jDv"/>
+                <constraint firstAttribute="bottom" secondItem="gbn-uc-wDh" secondAttribute="bottom" id="Dqu-U3-a2Z"/>
+                <constraint firstItem="gbn-uc-wDh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QfI-Sj-Tcx"/>
+                <constraint firstAttribute="trailing" secondItem="thk-84-DMM" secondAttribute="trailing" id="aL3-Ex-VfE"/>
+                <constraint firstItem="gbn-uc-wDh" firstAttribute="top" secondItem="thk-84-DMM" secondAttribute="bottom" id="cjJ-mS-an4"/>
+                <constraint firstAttribute="trailing" secondItem="gbn-uc-wDh" secondAttribute="trailing" id="oaD-cB-FY7"/>
+                <constraint firstItem="thk-84-DMM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="viE-cq-WsP"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

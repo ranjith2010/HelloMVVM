@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>378329710803-0uhgm0o9chro9f2296vu4qs1hch3bmbu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.378329710803-0uhgm0o9chro9f2296vu4qs1hch3bmbu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBDIUORaTri91eiE0KtwlBD8GzjUl35wC4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>378329710803</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ranjith.HelloMVVM</string>
+	<key>PROJECT_ID</key>
+	<string>hellomvvm-e59fb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hellomvvm-e59fb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:378329710803:ios:bae2bc8c2be06d30</string>
+	<key>DATABASE_URL</key>
+	<string>https://hellomvvm-e59fb.firebaseio.com</string>
+</dict>
+</plist>

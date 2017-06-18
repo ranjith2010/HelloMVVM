@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0740E4141EEC177D0094CBF8 /* HMUserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0740E4131EEC177D0094CBF8 /* HMUserStore.swift */; };
+		07A5B2ED1EE53266009E9123 /* HMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5B2EB1EE53266009E9123 /* HMHomeController.swift */; };
+		07A5B2EE1EE53266009E9123 /* HMHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A5B2EC1EE53266009E9123 /* HMHomeController.xib */; };
+		07A5B2F01EE5332E009E9123 /* HMHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5B2EF1EE5332E009E9123 /* HMHomeViewModel.swift */; };
+		07A5C7B71EF5790A004906A1 /* HMChatRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C7B31EF5790A004906A1 /* HMChatRoomController.swift */; };
+		07A5C7B81EF5790A004906A1 /* HMChatRoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C7B51EF5790A004906A1 /* HMChatRoomsController.swift */; };
+		07A5C7B91EF5790A004906A1 /* HMChatRoomsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A5C7B61EF5790A004906A1 /* HMChatRoomsController.xib */; };
+		07A5C7BB1EF57A6E004906A1 /* HMChatRoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C7BA1EF57A6E004906A1 /* HMChatRoomsViewModel.swift */; };
+		07A5C7BD1EF58828004906A1 /* HMChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C7BC1EF58828004906A1 /* HMChatRoomViewModel.swift */; };
+		07D85BC91EE68E2100E3370C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07D85BC81EE68E2100E3370C /* GoogleService-Info.plist */; };
 		07E882221EDFB6FE00B1964D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882211EDFB6FE00B1964D /* AppDelegate.swift */; };
-		07E882241EDFB6FE00B1964D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882231EDFB6FE00B1964D /* ViewController.swift */; };
-		07E882271EDFB6FE00B1964D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E882251EDFB6FE00B1964D /* Main.storyboard */; };
 		07E882291EDFB6FE00B1964D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E882281EDFB6FE00B1964D /* Assets.xcassets */; };
 		07E8822C1EDFB6FE00B1964D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E8822A1EDFB6FE00B1964D /* LaunchScreen.storyboard */; };
+		07E882391EDFB78600B1964D /* HMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882381EDFB78600B1964D /* HMApp.swift */; };
+		07E8823D1EDFBAF800B1964D /* HMLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8823C1EDFBAF800B1964D /* HMLoginViewModel.swift */; };
+		07E882411EDFBB1E00B1964D /* HMSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882401EDFBB1E00B1964D /* HMSignupViewModel.swift */; };
+		07E882451EDFBB3B00B1964D /* HMSplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882441EDFBB3B00B1964D /* HMSplashViewModel.swift */; };
+		07E8824A1EDFC03A00B1964D /* HMLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882481EDFC03A00B1964D /* HMLoginController.swift */; };
+		07E8824B1EDFC03A00B1964D /* HMLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E882491EDFC03A00B1964D /* HMLoginController.xib */; };
+		07E8824E1EDFC05800B1964D /* HMSignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8824C1EDFC05800B1964D /* HMSignupController.swift */; };
+		07E8824F1EDFC05800B1964D /* HMSignupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E8824D1EDFC05800B1964D /* HMSignupController.xib */; };
+		07E882521EDFC07800B1964D /* HMSplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882501EDFC07800B1964D /* HMSplashController.swift */; };
+		07E882531EDFC07800B1964D /* HMSplashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E882511EDFC07800B1964D /* HMSplashController.xib */; };
+		A11F3B3B8645CAA3BFFCEC7A /* Pods_HelloMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAA58421CF6EF0A30AB8A6C /* Pods_HelloMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0740E4131EEC177D0094CBF8 /* HMUserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMUserStore.swift; sourceTree = "<group>"; };
+		07A5B2EB1EE53266009E9123 /* HMHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeController.swift; sourceTree = "<group>"; };
+		07A5B2EC1EE53266009E9123 /* HMHomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMHomeController.xib; sourceTree = "<group>"; };
+		07A5B2EF1EE5332E009E9123 /* HMHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeViewModel.swift; sourceTree = "<group>"; };
+		07A5C7B31EF5790A004906A1 /* HMChatRoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMChatRoomController.swift; sourceTree = "<group>"; };
+		07A5C7B51EF5790A004906A1 /* HMChatRoomsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMChatRoomsController.swift; sourceTree = "<group>"; };
+		07A5C7B61EF5790A004906A1 /* HMChatRoomsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMChatRoomsController.xib; sourceTree = "<group>"; };
+		07A5C7BA1EF57A6E004906A1 /* HMChatRoomsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMChatRoomsViewModel.swift; sourceTree = "<group>"; };
+		07A5C7BC1EF58828004906A1 /* HMChatRoomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMChatRoomViewModel.swift; sourceTree = "<group>"; };
+		07D85BC81EE68E2100E3370C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07E8821E1EDFB6FE00B1964D /* HelloMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E882211EDFB6FE00B1964D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E882231EDFB6FE00B1964D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07E882261EDFB6FE00B1964D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E882281EDFB6FE00B1964D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E8822B1EDFB6FE00B1964D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E8822D1EDFB6FE00B1964D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E882381EDFB78600B1964D /* HMApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMApp.swift; sourceTree = "<group>"; };
+		07E8823C1EDFBAF800B1964D /* HMLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMLoginViewModel.swift; path = Modules/Login/HMLoginViewModel.swift; sourceTree = "<group>"; };
+		07E882401EDFBB1E00B1964D /* HMSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSignupViewModel.swift; path = Modules/Signup/HMSignupViewModel.swift; sourceTree = "<group>"; };
+		07E882441EDFBB3B00B1964D /* HMSplashViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSplashViewModel.swift; path = Modules/Splash/HMSplashViewModel.swift; sourceTree = "<group>"; };
+		07E882481EDFC03A00B1964D /* HMLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMLoginController.swift; path = Modules/Login/HMLoginController.swift; sourceTree = "<group>"; };
+		07E882491EDFC03A00B1964D /* HMLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HMLoginController.xib; path = Modules/Login/HMLoginController.xib; sourceTree = "<group>"; };
+		07E8824C1EDFC05800B1964D /* HMSignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSignupController.swift; path = Modules/Signup/HMSignupController.swift; sourceTree = "<group>"; };
+		07E8824D1EDFC05800B1964D /* HMSignupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HMSignupController.xib; path = Modules/Signup/HMSignupController.xib; sourceTree = "<group>"; };
+		07E882501EDFC07800B1964D /* HMSplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSplashController.swift; path = Modules/Splash/HMSplashController.swift; sourceTree = "<group>"; };
+		07E882511EDFC07800B1964D /* HMSplashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HMSplashController.xib; path = Modules/Splash/HMSplashController.xib; sourceTree = "<group>"; };
+		7DF7FB54BC77A8CD737070B2 /* Pods-HelloMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		ADDB50F59DC3C2DB5B3C3A82 /* Pods-HelloMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		BBAA58421CF6EF0A30AB8A6C /* Pods_HelloMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +69,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11F3B3B8645CAA3BFFCEC7A /* Pods_HelloMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0740E4121EEC17670094CBF8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0740E4131EEC177D0094CBF8 /* HMUserStore.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		07A5B2EA1EE53227009E9123 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				07A5B2EF1EE5332E009E9123 /* HMHomeViewModel.swift */,
+				07A5B2EB1EE53266009E9123 /* HMHomeController.swift */,
+				07A5B2EC1EE53266009E9123 /* HMHomeController.xib */,
+			);
+			name = Home;
+			path = Modules/Home;
+			sourceTree = "<group>";
+		};
+		07A5C7B11EF5790A004906A1 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				07A5C7B21EF5790A004906A1 /* Room */,
+				07A5C7B41EF5790A004906A1 /* Rooms */,
+			);
+			name = ChatRoom;
+			path = Modules/ChatRoom;
+			sourceTree = "<group>";
+		};
+		07A5C7B21EF5790A004906A1 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				07A5C7BC1EF58828004906A1 /* HMChatRoomViewModel.swift */,
+				07A5C7B31EF5790A004906A1 /* HMChatRoomController.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		07A5C7B41EF5790A004906A1 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				07A5C7BA1EF57A6E004906A1 /* HMChatRoomsViewModel.swift */,
+				07A5C7B51EF5790A004906A1 /* HMChatRoomsController.swift */,
+				07A5C7B61EF5790A004906A1 /* HMChatRoomsController.xib */,
+			);
+			path = Rooms;
+			sourceTree = "<group>";
+		};
 		07E882151EDFB6FE00B1964D = {
 			isa = PBXGroup;
 			children = (
+				07D85BC81EE68E2100E3370C /* GoogleService-Info.plist */,
 				07E882201EDFB6FE00B1964D /* HelloMVVM */,
 				07E8821F1EDFB6FE00B1964D /* Products */,
+				69578E9DFCA85158F4C5B432 /* Pods */,
+				2C4524A63F22118A6CFA6EC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +146,82 @@
 		07E882201EDFB6FE00B1964D /* HelloMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				0740E4121EEC17670094CBF8 /* Helpers */,
+				07E882331EDFB70300B1964D /* App */,
+				07E882341EDFB72700B1964D /* Modules */,
+			);
+			path = HelloMVVM;
+			sourceTree = "<group>";
+		};
+		07E882331EDFB70300B1964D /* App */ = {
+			isa = PBXGroup;
+			children = (
 				07E882211EDFB6FE00B1964D /* AppDelegate.swift */,
-				07E882231EDFB6FE00B1964D /* ViewController.swift */,
-				07E882251EDFB6FE00B1964D /* Main.storyboard */,
+				07E882381EDFB78600B1964D /* HMApp.swift */,
 				07E882281EDFB6FE00B1964D /* Assets.xcassets */,
 				07E8822A1EDFB6FE00B1964D /* LaunchScreen.storyboard */,
 				07E8822D1EDFB6FE00B1964D /* Info.plist */,
 			);
-			path = HelloMVVM;
+			name = App;
+			sourceTree = "<group>";
+		};
+		07E882341EDFB72700B1964D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				07A5C7B11EF5790A004906A1 /* ChatRoom */,
+				07A5B2EA1EE53227009E9123 /* Home */,
+				07E882361EDFB73900B1964D /* Splash */,
+				07E882371EDFB74100B1964D /* Signup */,
+				07E882351EDFB73400B1964D /* Login */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		07E882351EDFB73400B1964D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				07E8823C1EDFBAF800B1964D /* HMLoginViewModel.swift */,
+				07E882481EDFC03A00B1964D /* HMLoginController.swift */,
+				07E882491EDFC03A00B1964D /* HMLoginController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		07E882361EDFB73900B1964D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				07E882441EDFBB3B00B1964D /* HMSplashViewModel.swift */,
+				07E882501EDFC07800B1964D /* HMSplashController.swift */,
+				07E882511EDFC07800B1964D /* HMSplashController.xib */,
+			);
+			name = Splash;
+			sourceTree = "<group>";
+		};
+		07E882371EDFB74100B1964D /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				07E882401EDFBB1E00B1964D /* HMSignupViewModel.swift */,
+				07E8824C1EDFC05800B1964D /* HMSignupController.swift */,
+				07E8824D1EDFC05800B1964D /* HMSignupController.xib */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		2C4524A63F22118A6CFA6EC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAA58421CF6EF0A30AB8A6C /* Pods_HelloMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69578E9DFCA85158F4C5B432 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADDB50F59DC3C2DB5B3C3A82 /* Pods-HelloMVVM.debug.xcconfig */,
+				7DF7FB54BC77A8CD737070B2 /* Pods-HelloMVVM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07E882301EDFB6FE00B1964D /* Build configuration list for PBXNativeTarget "HelloMVVM" */;
 			buildPhases = (
+				BB8F5425C3E9A0D7D6473E58 /* [CP] Check Pods Manifest.lock */,
 				07E8821A1EDFB6FE00B1964D /* Sources */,
 				07E8821B1EDFB6FE00B1964D /* Frameworks */,
 				07E8821C1EDFB6FE00B1964D /* Resources */,
+				964E37999DC42DEED7E99D11 /* [CP] Embed Pods Frameworks */,
+				08EAABF6BA031433E3EF130E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,34 +288,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E8822C1EDFB6FE00B1964D /* LaunchScreen.storyboard in Resources */,
+				07E8824B1EDFC03A00B1964D /* HMLoginController.xib in Resources */,
+				07E882531EDFC07800B1964D /* HMSplashController.xib in Resources */,
+				07E8824F1EDFC05800B1964D /* HMSignupController.xib in Resources */,
+				07D85BC91EE68E2100E3370C /* GoogleService-Info.plist in Resources */,
+				07A5B2EE1EE53266009E9123 /* HMHomeController.xib in Resources */,
+				07A5C7B91EF5790A004906A1 /* HMChatRoomsController.xib in Resources */,
 				07E882291EDFB6FE00B1964D /* Assets.xcassets in Resources */,
-				07E882271EDFB6FE00B1964D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08EAABF6BA031433E3EF130E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964E37999DC42DEED7E99D11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8F5425C3E9A0D7D6473E58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07E8821A1EDFB6FE00B1964D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E882241EDFB6FE00B1964D /* ViewController.swift in Sources */,
+				07E882411EDFBB1E00B1964D /* HMSignupViewModel.swift in Sources */,
+				07A5B2ED1EE53266009E9123 /* HMHomeController.swift in Sources */,
+				07E8823D1EDFBAF800B1964D /* HMLoginViewModel.swift in Sources */,
+				07E8824E1EDFC05800B1964D /* HMSignupController.swift in Sources */,
+				07A5C7B81EF5790A004906A1 /* HMChatRoomsController.swift in Sources */,
+				07A5C7BD1EF58828004906A1 /* HMChatRoomViewModel.swift in Sources */,
+				07A5B2F01EE5332E009E9123 /* HMHomeViewModel.swift in Sources */,
+				0740E4141EEC177D0094CBF8 /* HMUserStore.swift in Sources */,
+				07E882391EDFB78600B1964D /* HMApp.swift in Sources */,
+				07E8824A1EDFC03A00B1964D /* HMLoginController.swift in Sources */,
+				07A5C7B71EF5790A004906A1 /* HMChatRoomController.swift in Sources */,
+				07E882451EDFBB3B00B1964D /* HMSplashViewModel.swift in Sources */,
 				07E882221EDFB6FE00B1964D /* AppDelegate.swift in Sources */,
+				07A5C7BB1EF57A6E004906A1 /* HMChatRoomsViewModel.swift in Sources */,
+				07E882521EDFC07800B1964D /* HMSplashController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		07E882251EDFB6FE00B1964D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07E882261EDFB6FE00B1964D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07E8822A1EDFB6FE00B1964D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +480,7 @@
 		};
 		07E882311EDFB6FE00B1964D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDB50F59DC3C2DB5B3C3A82 /* Pods-HelloMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B76KMHZKZ7;
@@ -272,6 +494,7 @@
 		};
 		07E882321EDFB6FE00B1964D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF7FB54BC77A8CD737070B2 /* Pods-HelloMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B76KMHZKZ7;
@@ -302,6 +525,7 @@
 				07E882321EDFB6FE00B1964D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
