@@ -29,7 +29,6 @@ class HMChatRoomsController: UIViewController,HMChatRoomsViewProtocol {
         return view
     }()
     
-    
     // MARK: - ViewLife cycle functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +79,6 @@ extension HMChatRoomsController:UITableViewDelegate,UITableViewDataSource {
         chatvc.senderId = HMUserStore.shared.uid
         chatvc.senderDisplayName = HMUserStore.shared.email
         chatvc.viewModel = chatVCViewModel
-        
         self.navigationController?.pushViewController(chatvc, animated: true)
     }
     

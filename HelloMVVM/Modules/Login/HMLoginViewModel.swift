@@ -10,7 +10,7 @@ import Foundation
 import FirebaseAuth
 
 protocol HMLoginViewProtocol:class {
-    func loginCompletion(user: FIRUser?,error:Error?)
+    func loginCompletion(user: User?,error:Error?)
 }
 
 class HMLoginViewModel: NSObject {
@@ -18,7 +18,7 @@ class HMLoginViewModel: NSObject {
     public weak var viewDelegate:HMLoginViewProtocol?
     
     public func login(with email:String, and password:String) {
-        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+        Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             guard let email = user?.email, let uid = user?.uid else{
                 return
             }

@@ -20,22 +20,23 @@ class HMHomeController: UIViewController {
 //        tableview_users.delegate = self
 //        tableview_users.dataSource = self
         
-        let db = FIRDatabase.database().reference()
-        let storage = FIRStorage.storage().reference()
-        let tempImageRef = storage.child("tmpDir/tmpImage.jpg")
-        
-        let metaData = FIRStorageMetadata()
-        metaData.contentType = "image/jpg"
-        
-        tempImageRef.put(UIImageJPEGRepresentation(#imageLiteral(resourceName: "firebase-logo.png"), 0.8)!, metadata: metaData) { (data, error) in
-            if error != nil {
-                print(error?.localizedDescription ?? "")
-            }else {
-                print("upload successful")
-            }
-        }
+//        let db = Database.database().reference()
+//        let storage = Storage.storage().reference()
+//        let tempImageRef = storage.child("tmpDir/tmpImage.jpg")
+//        
+//        let metaData = StorageMetadata()
+//        metaData.contentType = "image/jpg"
+//        
+//        
+//        
+//        tempImageRef.put(UIImageJPEGRepresentation(#imageLiteral(resourceName: "firebase-logo.png"), 0.8)!, metadata: metaData) { (data, error) in
+//            if error != nil {
+//                print(error?.localizedDescription ?? "")
+//            }else {
+//                print("upload successful")
+//            }
+//        }
     }
-    
 }
 
 extension HMHomeController:UITableViewDelegate,UITableViewDataSource {

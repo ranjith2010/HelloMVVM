@@ -10,7 +10,7 @@ import Foundation
 import FirebaseAuth
 
 protocol HMSignupViewProtocol:class {
-    func signupCompletion(user:FIRUser?,error:Error?)
+    func signupCompletion(user:User?,error:Error?)
 }
 
 class HMSignupViewModel: NSObject {
@@ -18,7 +18,7 @@ class HMSignupViewModel: NSObject {
     public weak var viewDelegate:HMSignupViewProtocol?
     
     public func signup(with email:String, and password:String) {
-        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user, error) in
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
             self.viewDelegate?.signupCompletion(user: user, error: error)
         })
     }

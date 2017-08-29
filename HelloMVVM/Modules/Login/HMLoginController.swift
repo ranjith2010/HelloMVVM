@@ -32,7 +32,7 @@ class HMLoginController: UIViewController {
 }
 
 extension HMLoginController:HMLoginViewProtocol {
-    func loginCompletion(user: FIRUser?, error: Error?) {
+    func loginCompletion(user: User?, error: Error?) {
         guard let u = user else {
             print("error:\(String(describing: error?.localizedDescription))")
             return

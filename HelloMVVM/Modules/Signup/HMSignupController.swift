@@ -26,13 +26,17 @@ class HMSignupController: UIViewController {
             let pwd = txtField_password?.text else {
                 return
         }
-        viewModel?.signup(with: email, and: pwd)
+        if email.isEmpty || pwd.isEmpty {
+            print("Enter correct input Fields")
+        }else {
+            viewModel?.signup(with: email, and: pwd)
+        }
     }
     
 }
 
 extension HMSignupController:HMSignupViewProtocol {
-    func signupCompletion(user: FIRUser?, error: Error?) {
+    func signupCompletion(user: User?, error: Error?) {
         guard let u = user else {
             print("error:\(String(describing: error?.localizedDescription))")
             return

@@ -16,8 +16,8 @@ protocol HMChatRoomsViewProtocol:class {
 class HMChatRoomsViewModel: NSObject {
     
     lazy var chatRooms:[ChatRoom] = []
-    lazy var chatRoomsRef: FIRDatabaseReference = FIRDatabase.database().reference().child("chatRooms")
-    private var chatRoomRefHandle: FIRDatabaseHandle?
+    lazy var chatRoomsRef: DatabaseReference = Database.database().reference().child("chatRooms")
+    private var chatRoomRefHandle: DatabaseHandle?
     public weak var delegate:HMChatRoomsViewProtocol?
     
     // MARK: - Firebase related methods

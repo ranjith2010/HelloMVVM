@@ -19,19 +19,19 @@ class HMChatRoomViewModel: NSObject {
     
     public weak var delegate:HMChatRoomViewProtocol?
     
-    public var chatRoomsRef: FIRDatabaseReference?
+    public var chatRoomsRef: DatabaseReference?
     public var ref_url:String?
     public var chatRoom: ChatRoom? {
         didSet {
             if let url = ref_url {
-                self.chatRoomsRef = FIRDatabase.database().reference().child(url)
+                self.chatRoomsRef = Database.database().reference().child(url)
             }
         }
     }
     
     //To recognise user is typing
-    private lazy var userIsTypingRef: FIRDatabaseReference =
-        self.chatRoomsRef!.child("typingIndicator").child(HMUserStore.shared.uid)
+    private lazy var userIsTypingRef: DatabaseReference =
+    self.chatRoomsRef!.child("typingIndicator").child(HMUserStore.shared.uid)
     private var localTyping = false
     var isTyping: Bool {
         get {
@@ -42,12 +42,12 @@ class HMChatRoomViewModel: NSObject {
             userIsTypingRef.setValue(newValue)
         }
     }
-    private lazy var usersTypingQuery: FIRDatabaseQuery =
+    private lazy var usersTypingQuery: DatabaseQuery =
         self.chatRoomsRef!.child("typingIndicator").queryOrderedByValue().queryEqual(toValue: true)
     
     //Message fetch and send Handling
-    private lazy var messageRef: FIRDatabaseReference = self.chatRoomsRef!.child("messages")
-    private var newMessageRefHandle: FIRDatabaseHandle?
+    private lazy var messageRef: DatabaseReference = self.chatRoomsRef!.child("messages")
+    private var newMessageRefHandle: DatabaseHandle?
     
     var messages = [JSQMessage]()
     
@@ -72,7 +72,7 @@ class HMChatRoomViewModel: NSObject {
         userIsTypingRef = typingIndicatorRef.child(HMUserStore.shared.uid)
         userIsTypingRef.onDisconnectRemoveValue()
         
-        usersTypingQuery.observe(.value) { (data: FIRDataSnapshot) in
+        usersTypingQuery.observe(.value) { (data: DataSnapshot) in
             // You're the only one typing, don't show the indicator
             if data.childrenCount == 1 && self.isTyping {
                 return

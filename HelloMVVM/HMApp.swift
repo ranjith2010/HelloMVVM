@@ -30,7 +30,7 @@ class HMApp:NSObject {
     }
     
     func addConfiguration() {
-        FIRApp.configure()
+        FirebaseApp.configure()
     }
     
 }

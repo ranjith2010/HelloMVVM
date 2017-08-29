@@ -20,6 +20,7 @@ class HMUserStore {
         return Static.instance
     }
     
+    //Todo: speak via Model instead of Dictionary. Bad practise.
     var user:Dictionary<String, Any>? {
         get {
             guard let dictionary = UserDefaults.standard.object(forKey: k_userKey) as? [String:Any] else {
