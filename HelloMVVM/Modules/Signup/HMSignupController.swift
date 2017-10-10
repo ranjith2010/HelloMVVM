@@ -40,12 +40,18 @@ class HMSignupController: UIViewController {
         }
     }
     
+    @objc func dismissAlert(sender:UIAlertController) {
+        sender.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension HMSignupController:HMSignupViewProtocol {
     func signupCompletion(user: User?, error: Error?) {
         guard let u = user else {
-            print("error:\(String(describing: error?.localizedDescription))")
+            let alertController = UIAlertController.init(title: "Hello-MVVM", message: error?.localizedDescription ?? "", preferredStyle: .alert)
+            self.present(alertController, animated: true, completion: nil)
+            self.perform(#selector(dismissAlert), with: alertController, afterDelay: 1.0)
             return
         }
         guard let email = u.email,let uid = user?.uid else{
