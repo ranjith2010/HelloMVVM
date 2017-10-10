@@ -14,11 +14,18 @@ class HMSignupController: UIViewController {
     @IBOutlet private weak var txtField_Email:UITextField?
     @IBOutlet private weak var txtField_password:UITextField?
     
+    var str1:Box<String?> = Box(nil)
+    
     public var viewModel:HMSignupViewModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = HMSignupViewModel()
         viewModel?.viewDelegate = self
+        viewModel?.str1Ref = str1
+        
+        str1.bind { (newValue) in
+            print("Hello \(newValue ?? "")")
+        }
     }
     
     @IBAction func didTapSignup(){

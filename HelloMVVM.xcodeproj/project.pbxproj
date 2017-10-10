@@ -30,6 +30,7 @@
 		07E8824F1EDFC05800B1964D /* HMSignupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E8824D1EDFC05800B1964D /* HMSignupController.xib */; };
 		07E882521EDFC07800B1964D /* HMSplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E882501EDFC07800B1964D /* HMSplashController.swift */; };
 		07E882531EDFC07800B1964D /* HMSplashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E882511EDFC07800B1964D /* HMSplashController.xib */; };
+		07F21E3A1F5CB0FD0034E02F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F21E391F5CB0FD0034E02F /* Box.swift */; };
 		A11F3B3B8645CAA3BFFCEC7A /* Pods_HelloMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAA58421CF6EF0A30AB8A6C /* Pods_HelloMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		07E8824D1EDFC05800B1964D /* HMSignupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HMSignupController.xib; path = Modules/Signup/HMSignupController.xib; sourceTree = "<group>"; };
 		07E882501EDFC07800B1964D /* HMSplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HMSplashController.swift; path = Modules/Splash/HMSplashController.swift; sourceTree = "<group>"; };
 		07E882511EDFC07800B1964D /* HMSplashController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HMSplashController.xib; path = Modules/Splash/HMSplashController.xib; sourceTree = "<group>"; };
+		07F21E391F5CB0FD0034E02F /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		7DF7FB54BC77A8CD737070B2 /* Pods-HelloMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		ADDB50F59DC3C2DB5B3C3A82 /* Pods-HelloMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMVVM/Pods-HelloMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		BBAA58421CF6EF0A30AB8A6C /* Pods_HelloMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 			children = (
 				07E882211EDFB6FE00B1964D /* AppDelegate.swift */,
 				07E882381EDFB78600B1964D /* HMApp.swift */,
+				07F21E391F5CB0FD0034E02F /* Box.swift */,
 				07E882281EDFB6FE00B1964D /* Assets.xcassets */,
 				07E8822A1EDFB6FE00B1964D /* LaunchScreen.storyboard */,
 				07E8822D1EDFB6FE00B1964D /* Info.plist */,
@@ -260,6 +263,7 @@
 					07E8821D1EDFB6FE00B1964D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = B76KMHZKZ7;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -366,6 +370,7 @@
 				07A5C7B71EF5790A004906A1 /* HMChatRoomController.swift in Sources */,
 				07E882451EDFBB3B00B1964D /* HMSplashViewModel.swift in Sources */,
 				07E882221EDFB6FE00B1964D /* AppDelegate.swift in Sources */,
+				07F21E3A1F5CB0FD0034E02F /* Box.swift in Sources */,
 				07A5C7BB1EF57A6E004906A1 /* HMChatRoomsViewModel.swift in Sources */,
 				07E882521EDFC07800B1964D /* HMSplashController.swift in Sources */,
 			);
@@ -490,7 +495,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranjith.HelloMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -506,7 +512,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranjith.HelloMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

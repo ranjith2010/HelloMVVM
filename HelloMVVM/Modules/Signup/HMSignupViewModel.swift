@@ -16,9 +16,11 @@ protocol HMSignupViewProtocol:class {
 class HMSignupViewModel: NSObject {
     
     public weak var viewDelegate:HMSignupViewProtocol?
+    var str1Ref:Box<String?>?
     
     public func signup(with email:String, and password:String) {
         Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
+            self.str1Ref?.value = "Ranjith"
             self.viewDelegate?.signupCompletion(user: user, error: error)
         })
     }
