@@ -60,7 +60,8 @@ extension HMSignupController:HMSignupViewProtocol {
         HMUserStore.shared.user = ["email":email,"u_id":uid]
         print("Logged in with:\(user?.email ?? "")")
         let appdelegate = UIApplication.shared.delegate as? AppDelegate
-        appdelegate?.app?.window.rootViewController = HMChatRoomsController()
+        let nc = UINavigationController.init(rootViewController: HMChatRoomsController())
+        appdelegate?.app?.window.rootViewController = nc
     }
 }
 

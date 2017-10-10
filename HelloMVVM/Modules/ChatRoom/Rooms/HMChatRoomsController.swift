@@ -63,6 +63,7 @@ extension HMChatRoomsController:UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.tableView_chatRooms.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell!
+        cell.selectionStyle = .none
         cell.textLabel?.text = self.viewModel.objectForRow(at: indexPath).name
         return cell
     }
